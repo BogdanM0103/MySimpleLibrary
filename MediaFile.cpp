@@ -3,36 +3,41 @@
 
 // Constructor
 MediaFile::MediaFile(const std::string& title, const std::string& author, int year)
-    : title(title), author(author), year(year) {  // Direct member initialization
+    : title(new std::string(title)), author(new std::string(author)), year(year) {
     std::cout << "MediaFile constructor called" << std::endl;
+    display_info();
 }
 
 // Copy constructor
 MediaFile::MediaFile(const MediaFile& other)
-    : title(other.title), author(other.author), year(other.year) { // Direct member initialization
+    : title(new std::string(*other.title)), author(new std::string(*other.author)), year(other.year) {
     std::cout << "MediaFile copy constructor called" << std::endl;
+    display_info();
 }
 
 // Move constructor
 MediaFile::MediaFile(MediaFile&& other) noexcept
-    : title(std::move(other.title)),  // Move title
-      author(std::move(other.author)), // Move author
-      year(other.year) {               // Copy year (no need to move)
+    : title(other.title),
+      author(other.author),
+      year(other.year) {
     std::cout << "MediaFile move constructor called" << std::endl;
+    display_info();
 
-    // Optionally, reset the moved-from object
-    other.year = 0; // Resetting year to a default value
+    // Reset the moved-from object
+    other.title = nullptr;
+    other.author = nullptr;
 }
-
 
 // Destructor
 MediaFile::~MediaFile() {
     std::cout << "MediaFile destructor called" << std::endl;
+    delete title;   // Free memory allocated for title
+    delete author;  // Free memory allocated for author
 }
 
+// Implementation of display_info method
 void MediaFile::display_info() const {
-    std::cout << "display_info() called" << std::endl;
-    std::cout << "Title: " << title << std::endl;
-    std::cout << "Author: " << author << std::endl;
+    std::cout << "Title: " << *title << std::endl;
+    std::cout << "Author: " << *author << std::endl;
     std::cout << "Year: " << year << std::endl;
 }
