@@ -1,0 +1,10 @@
+# ninja log v6
+3	677	7523752078605174	CMakeFiles/MySimpleLibrary.dir/main.cpp.obj	f0213ade00853d04
+18	686	7523752078754778	CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj	c57bad1a4d2b68ce
+25	155	7523753848951061	CMakeFiles/MySimpleLibrary.dir/main.cpp.obj	f0213ade00853d04
+9	650	7523753848784449	CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj	c57bad1a4d2b68ce
+10	678	7523755044531578	CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj	c57bad1a4d2b68ce
+679	910	7523755051223932	MySimpleLibrary.exe	d57da3c186a93631
+30	605	7523761982945818	CMakeFiles/MySimpleLibrary.dir/main.cpp.obj	f0213ade00853d04
+10	722	7523761982745871	CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj	c57bad1a4d2b68ce
+722	971	7523761989864143	MySimpleLibrary.exe	d57da3c186a93631
