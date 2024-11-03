@@ -17,6 +17,7 @@ public:
     // Destructor
     ~MediaFile();
 
+    void display_info() const;
 private:
     std::string title;  // Direct member variable
     std::string author; // Direct member variable
