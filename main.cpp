@@ -2,14 +2,17 @@
 //
 // Created by Bogdan on 11/4/2024.
 //
+#include "Book.h"
+
 int main() {
-    // Create an original MediaFile object
-    MediaFile original("1984", "George Orwell", 1984);
+    Book myBook("1984", "George Orwell", 1949, 328, "A dystopian novel about totalitarianism.");
+    myBook.display_info(); // Call the display_info method
 
-    // Use the copy constructor to create a new MediaFile object
-    MediaFile copy = original; // This calls the copy constructor
+    Book anotherBook = myBook; // Calls the copy constructor
+    anotherBook.display_info();
 
-    // Use the move constructor
-    MediaFile moved = std::move(original);
+    Book movedBook = std::move(myBook); // Calls the move constructor
+    movedBook.display_info();
+
     return 0;
 }

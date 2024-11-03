@@ -8,26 +8,6 @@ MediaFile::MediaFile(const std::string& title, const std::string& author, int ye
     display_info();
 }
 
-// Copy constructor
-MediaFile::MediaFile(const MediaFile& other)
-    : title(new std::string(*other.title)), author(new std::string(*other.author)), year(other.year) {
-    std::cout << "MediaFile copy constructor called" << std::endl;
-    display_info();
-}
-
-// Move constructor
-MediaFile::MediaFile(MediaFile&& other) noexcept
-    : title(other.title),
-      author(other.author),
-      year(other.year) {
-    std::cout << "MediaFile move constructor called" << std::endl;
-    display_info();
-
-    // Reset the moved-from object
-    other.title = nullptr;
-    other.author = nullptr;
-}
-
 // Destructor
 MediaFile::~MediaFile() {
     std::cout << "MediaFile destructor called" << std::endl;

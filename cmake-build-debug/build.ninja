@@ -61,6 +61,12 @@ build CMakeFiles/MySimpleLibrary.dir/main.cpp.obj: CXX_COMPILER__MySimpleLibrary
   OBJECT_DIR = CMakeFiles\MySimpleLibrary.dir
   OBJECT_FILE_DIR = CMakeFiles\MySimpleLibrary.dir
 
+build CMakeFiles/MySimpleLibrary.dir/Book.cpp.obj: CXX_COMPILER__MySimpleLibrary_unscanned_Debug C$:/Users/Bogdan/CLionProjects/MySimpleLibrary/Book.cpp || cmake_object_order_depends_target_MySimpleLibrary
+  DEP_FILE = CMakeFiles\MySimpleLibrary.dir\Book.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\MySimpleLibrary.dir
+  OBJECT_FILE_DIR = CMakeFiles\MySimpleLibrary.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target MySimpleLibrary
@@ -69,7 +75,7 @@ build CMakeFiles/MySimpleLibrary.dir/main.cpp.obj: CXX_COMPILER__MySimpleLibrary
 #############################################
 # Link the executable MySimpleLibrary.exe
 
-build MySimpleLibrary.exe: CXX_EXECUTABLE_LINKER__MySimpleLibrary_Debug CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj CMakeFiles/MySimpleLibrary.dir/main.cpp.obj
+build MySimpleLibrary.exe: CXX_EXECUTABLE_LINKER__MySimpleLibrary_Debug CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj CMakeFiles/MySimpleLibrary.dir/main.cpp.obj CMakeFiles/MySimpleLibrary.dir/Book.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\MySimpleLibrary.dir

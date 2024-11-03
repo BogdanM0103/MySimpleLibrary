@@ -7,4 +7,5 @@ add_executable(MySimpleLibrary
         MediaFile.cpp
         MediaFile.h
         main.cpp
+        Book.cpp
 )
