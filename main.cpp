@@ -8,5 +8,8 @@ int main() {
 
     // Use the copy constructor to create a new MediaFile object
     MediaFile copy = original; // This calls the copy constructor
+
+    // Use the move constructor
+    MediaFile moved = std::move(original);
     return 0;
 }

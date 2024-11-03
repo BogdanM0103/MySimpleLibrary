@@ -11,6 +11,9 @@ public:
     // Copy constructor
     MediaFile(const MediaFile& other);
 
+    // Move constructor
+    MediaFile(MediaFile &&other) noexcept;
+
     // Destructor
     ~MediaFile();
 
