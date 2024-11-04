@@ -11,7 +11,7 @@ Book::Book(const std::string& title, const std::string& author, int year, int pa
       pages(pages),
       description(new std::string(description)) { // Allocate memory for description
     std::cout << "Book constructor called" << std::endl;
-    display_info();
+//    display_info();
 }
 
 // Copy constructor
@@ -25,7 +25,7 @@ Book::Book(const Book& other)
 
 // Move constructor
 Book::Book(Book&& other) noexcept
-    : MediaFile(std::move(other)), // Call the base class move constructor
+    : MediaFile(other), // Call the base class move constructor
       pages(other.pages),
       description(other.description) { // Transfer ownership of description
 
