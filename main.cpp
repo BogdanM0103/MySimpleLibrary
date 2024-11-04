@@ -4,6 +4,7 @@
 //
 #include "Book.h"
 #include "Movie.h"
+#include "UserInterface.h"
 
 int main() {
 //    Book myBook("1984", "George Orwell", 1949, 328, "A dystopian novel about totalitarianism.");
@@ -15,8 +16,9 @@ int main() {
 //    Book movedBook = std::move(myBook); // Calls the move constructor
 //    movedBook.display_info();
 
-    Movie myMovie("Star Wars episode IV", "George Lucas", 1977, 120, "Long ago, in a galaxy far, far away..");
-    myMovie.display_info();
-
+//    Movie myMovie("Star Wars episode IV", "George Lucas", 1977, 120, "Long ago, in a galaxy far, far away..");
+//    myMovie.display_info();
+    UserInterface ui = UserInterface();
+    ui.run();
     return 0;
 }
