@@ -3,7 +3,7 @@
 
 // Constructor
 MediaFile::MediaFile(const std::string& title, const std::string& author, uint16_t year)
-    : title(new std::string(title)), author(new std::string(author)), year(year) {
+    : title(new std::string(title)), author(new std::string(author)), publication_year(year) {
     std::cout << "MediaFile constructor called" << std::endl;
 //    display_info();
 }
@@ -19,5 +19,5 @@ MediaFile::~MediaFile() {
 void MediaFile::display_info() const {
     std::cout << "Title: " << *title << std::endl;
     std::cout << "Author: " << *author << std::endl;
-    std::cout << "Year: " << year << std::endl;
+    std::cout << "Year: " << publication_year << std::endl;
 }

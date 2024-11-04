@@ -5,7 +5,7 @@
 #include <iostream>
 #include "Movie.h"
 
-Movie::Movie(const std::string& title, const std::string& author, const uint16_t publication_date, const int length, const std::string& description)
+Movie::Movie(const std::string& title, const std::string& author, const uint16_t publication_date, const uint16_t length, const std::string& description)
     : MediaFile(title, author, publication_date), length(length), description(new std::string(description)) {
     std::cout << "Movie Constructor called" << std::endl;
 }

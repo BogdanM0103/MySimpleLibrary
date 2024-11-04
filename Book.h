@@ -10,7 +10,7 @@
 class Book : public MediaFile {
 public:
     // Constructor
-    Book(const std::string& title, const std::string& author, uint16_t year, int pages, const std::string& description);
+    Book(const std::string& title, const std::string& author, uint16_t year, uint16_t pages, const std::string& description);
 
     // Copy constructor
     Book(const Book& other);

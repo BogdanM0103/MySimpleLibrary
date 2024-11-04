@@ -12,7 +12,7 @@ public:
 private:
     std::string* title; // Pointer member variable
     std::string* author; // Pointer member variable
-    uint16_t year;
+    uint16_t publication_year;
 };
 
 #endif //MEDIAFILE_H

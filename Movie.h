@@ -10,7 +10,7 @@
 class Movie: public MediaFile {
 public:
     // Constructor
-    Movie(const std::string& title, const std::string& author, const uint16_t publication_year, const int length, const std::string& description);
+    Movie(const std::string& title, const std::string& author, const uint16_t publication_year, const uint16_t length, const std::string& description);
 
     // Copy Constructor
     Movie(const Movie& other);
