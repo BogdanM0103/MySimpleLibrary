@@ -5,14 +5,14 @@
 
 class MediaFile {
 public:
-    MediaFile(const std::string& title, const std::string& author, int year);
+    MediaFile(const std::string& title, const std::string& author, uint16_t year);
     virtual ~MediaFile(); // Make destructor virtual
     virtual void display_info() const; // Declare display_info as a virtual function
 
 private:
     std::string* title; // Pointer member variable
     std::string* author; // Pointer member variable
-    int year;
+    uint16_t year;
 };
 
 #endif //MEDIAFILE_H

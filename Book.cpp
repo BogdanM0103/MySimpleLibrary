@@ -6,7 +6,7 @@
 #include <iostream>
 
 // Constructor
-Book::Book(const std::string& title, const std::string& author, int year, int pages, const std::string& description)
+Book::Book(const std::string& title, const std::string& author, uint16_t year, int pages, const std::string& description)
     : MediaFile(title, author, year), // Call the base class constructor
       pages(pages),
       description(new std::string(description)) { // Allocate memory for description

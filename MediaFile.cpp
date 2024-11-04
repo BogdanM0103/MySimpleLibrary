@@ -2,7 +2,7 @@
 #include <iostream>
 
 // Constructor
-MediaFile::MediaFile(const std::string& title, const std::string& author, int year)
+MediaFile::MediaFile(const std::string& title, const std::string& author, uint16_t year)
     : title(new std::string(title)), author(new std::string(author)), year(year) {
     std::cout << "MediaFile constructor called" << std::endl;
 //    display_info();
