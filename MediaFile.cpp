@@ -17,6 +17,7 @@ MediaFile::~MediaFile() {
 
 // Implementation of display_info method
 void MediaFile::display_info() const {
+    std::cout << "display_info function has benn called." << std::endl;
     std::cout << "Title: " << *title << std::endl;
     std::cout << "Author: " << *author << std::endl;
     std::cout << "Year: " << publication_year << std::endl;
