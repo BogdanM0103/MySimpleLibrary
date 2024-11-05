@@ -29,11 +29,12 @@ void UserInterface::run() {
             continue;
         }
         uint8_t option = static_cast<uint8_t>(temp_option);
+        int media_option;
         switch (option) {
             case 1:
                 add_media_type();
                 std::cout << "Choose media type:";
-                int media_option;
+
                 std::cin >> media_option;
                 switch (media_option) {
                     case 1:
@@ -48,6 +49,18 @@ void UserInterface::run() {
                 break;
             case 2:
                 view_media_type();
+                std::cout << "Choose media type:" << std::endl;
+                std::cin >> media_option;
+                switch (media_option) {
+                    case 1:
+                        view_books();
+                        break;
+                    case 2:
+                        view_movies();
+                        break;
+                    default:
+                        break;
+                }
                 break;
             case 3:
                 exit_interface();
@@ -59,25 +72,25 @@ void UserInterface::run() {
     }
 }
 
-void UserInterface::display_menu() const {
+void UserInterface::display_menu() {
     std::cout << "Choose an option" << std::endl;
     std::cout << "1. Add a Media File" << std::endl;
     std::cout << "2. View Media Files" << std::endl;
     std::cout << "3. Exit." << std::endl;
 }
 
-void UserInterface::add_media_type() const {
+void UserInterface::add_media_type() {
     std::cout << "1. Add a Book." << std::endl;
     std::cout << "2. Add a Movie." << std::endl;
 }
 
-void UserInterface::view_media_type() const {
+void UserInterface::view_media_type() {
     std::cout << "1. View Books." << std::endl;
     std::cout << "2. View Movies." << std::endl;
 }
 
 
-void UserInterface::add_book_menu() const {
+void UserInterface::add_book_menu() {
     std::string title, author, description;
     uint16_t publication_year;
     uint16_t number_of_pages;
@@ -102,11 +115,12 @@ void UserInterface::add_book_menu() const {
     std::cout << "Description: ";
     std::getline(std::cin, description);  // Now read the full description
 
-    Book new_book(title, author, publication_year, number_of_pages, description);
-    new_book.display_info();
+    Book* new_book = new Book(title, author, publication_year, number_of_pages, description);
+    new_book->display_info();
+    books.push_back(new_book);
 }
 
-void UserInterface::add_movie_menu() const {
+void UserInterface::add_movie_menu() {
     std::string title, author, description;
     uint16_t publication_year;
     uint16_t number_of_minutes;
@@ -131,9 +145,35 @@ void UserInterface::add_movie_menu() const {
     std::cout << "Description: ";
     std::getline(std::cin, description);  // Now read the full description
 
-    Movie new_movie(title, author, publication_year, number_of_minutes, description);
-    new_movie.display_info();
+    Movie* new_movie = new Movie(title, author, publication_year, number_of_minutes, description);
+    new_movie->display_info();
+    movies.push_back(new_movie);
 }
+
+void UserInterface::view_books() {
+    if (books.empty()) {
+        std::cout << "No more books." << std::endl;
+        return;
+    }
+
+    for (const auto& book : books) {
+        book->display_info();
+        std::cout << "-------------------------------" << std::endl;
+    }
+}
+
+void UserInterface::view_movies() {
+    if (movies.empty()) {
+        std::cout << "No movies." << std::endl;
+        return;
+    }
+
+    for (const auto& book : books) {
+        book->display_info();
+        std::cout << "-------------------------------" << std::endl;
+    }
+}
+
 
 void UserInterface::exit_interface() {
     running = false;
