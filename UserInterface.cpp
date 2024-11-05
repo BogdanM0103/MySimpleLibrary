@@ -4,6 +4,8 @@
 
 #include <iostream>
 #include "UserInterface.h"
+
+#include <cstdint>
 #include <limits>
 
 UserInterface::UserInterface() : running(true) {

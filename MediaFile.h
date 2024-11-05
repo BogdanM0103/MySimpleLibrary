@@ -1,6 +1,7 @@
 #ifndef MEDIAFILE_H
 #define MEDIAFILE_H
 
+#include <cstdint>
 #include <string>
 
 class MediaFile {
