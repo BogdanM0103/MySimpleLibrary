@@ -11,7 +11,7 @@ public:
     // Copy Constructor
     MediaFile(const MediaFile& other);
     // Move Constructor
-    MediaFile(const MediaFile&& other);
+    MediaFile(const MediaFile&& other) noexcept;
     // Destructor
     virtual ~MediaFile(); // Make destructor virtual
     // method for displaying basic information about the file

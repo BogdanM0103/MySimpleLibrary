@@ -11,7 +11,6 @@ Book::Book(const std::string& title, const std::string& author, const uint16_t y
       pages(pages),
       description(new std::string(description)) { // Allocate memory for description
     std::cout << "Book constructor called" << std::endl;
-//    display_info();
 }
 
 // Copy constructor
@@ -20,7 +19,6 @@ Book::Book(const Book& other)
       pages(other.pages),
       description(new std::string(*other.description)) { // Deep copy for description
     std::cout << "Book copy constructor called" << std::endl;
-    display_info();
 }
 
 // Move constructor
@@ -30,7 +28,6 @@ Book::Book(Book&& other) noexcept
       description(other.description) { // Transfer ownership of description
 
     std::cout << "Book move constructor called" << std::endl;
-    display_info();
 
     // Reset the moved-from object
     other.pages = 0;           // Optionally reset pages

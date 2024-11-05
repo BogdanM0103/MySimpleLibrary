@@ -7,7 +7,7 @@
 #include "UserInterface.h"
 
 int main() {
-    Movie m = Movie("Star Wars episode IV", "George Lucas", 1977, 120, "Long ago, in a galaxy far, far away..");
-    m.display_info();
+    MediaFile f("1984", "George Orwell", 1984);
+    f.display_info();
     return 0;
 }

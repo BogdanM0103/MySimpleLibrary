@@ -5,16 +5,19 @@
 #include <iostream>
 #include "Movie.h"
 
+// Constructor
 Movie::Movie(const std::string& title, const std::string& author, const uint16_t publication_date, const uint16_t length, const std::string& description)
     : MediaFile(title, author, publication_date), length(length), description(new std::string(description)) {
     std::cout << "Movie Constructor called" << std::endl;
 }
 
+// Copy Constructor
 Movie::Movie(const Movie& other)
     : MediaFile(other), length(other.length), description(new std::string(*other.description)) {
     std::cout << "Movie Copy Constructor called" << std::endl;
 }
 
+// Move Constructor
 Movie::Movie(Movie&& other) noexcept
     : MediaFile(other), length(other.length), description(other.description) {
     std::cout << "Movie Move Constructor called" << std::endl;
@@ -22,6 +25,7 @@ Movie::Movie(Movie&& other) noexcept
     other.description = nullptr;
 }
 
+// Destructor
 Movie::~Movie() {
     delete description;
     std::cout << "Movie destructor called" << std::endl;
