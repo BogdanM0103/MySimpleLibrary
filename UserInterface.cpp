@@ -177,5 +177,16 @@ void UserInterface::view_movies() {
 
 void UserInterface::exit_interface() {
     running = false;
+    if (!books.empty()) {
+        for (const auto& book : books) {
+            delete book;
+        }
+    }
+
+    if(!movies.empty()) {
+        for (const auto& movie : movies) {
+            delete movie;
+        }
+    }
     std::cout << "Exiting interface. Goodbye!" << std::endl;
 }
