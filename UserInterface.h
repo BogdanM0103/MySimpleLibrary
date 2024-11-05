@@ -27,7 +27,7 @@ public:
 
     void run();
 private:
-    std::vector<Book*> books;
+    std::vector<Book> books;
     std::vector<Movie*> movies;
     bool running;
     void exit_interface();
