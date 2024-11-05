@@ -7,7 +7,7 @@
 #include "UserInterface.h"
 
 int main() {
-    MediaFile f("1984", "George Orwell", 1984);
-    f.display_info();
+    UserInterface userInterface = UserInterface();
+    userInterface.run();
     return 0;
 }

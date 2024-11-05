@@ -626,6 +626,9 @@ CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj: C:/Users/Bogdan/CLionProje
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/Bogdan/CLionProjects/MySimpleLibrary/Book.h \
+  C:/Users/Bogdan/CLionProjects/MySimpleLibrary/MediaFile.h \
+  C:/Users/Bogdan/CLionProjects/MySimpleLibrary/Movie.h \
   C:/Users/Bogdan/CLionProjects/MySimpleLibrary/UserInterface.h
 
 CMakeFiles/MySimpleLibrary.dir/main.cpp.obj: C:/Users/Bogdan/CLionProjects/MySimpleLibrary/main.cpp \

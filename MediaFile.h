@@ -21,6 +21,7 @@ private:
     mutable std::string* title; // Pointer member variable
     mutable std::string* author; // Pointer member variable
     uint16_t publication_year;
+
 };
 
 #endif //MEDIAFILE_H
