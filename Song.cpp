@@ -35,5 +35,5 @@ Song::Song(const Song&& other)
 void Song::display_info() const {
     MediaFile::display_info();
     std::cout << "duration_in_minutes: " << duration_in_minutes << std::endl;
-    std::cout << "Format: " << format << std::endl;
+    std::cout << "Format: " << *format << std::endl;
 }
