@@ -200,6 +200,30 @@ Movie.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/Movie.cpp.s
 .PHONY : Movie.cpp.s
 
+Song.obj: Song.cpp.obj
+.PHONY : Song.obj
+
+# target to build an object file
+Song.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/Song.cpp.obj
+.PHONY : Song.cpp.obj
+
+Song.i: Song.cpp.i
+.PHONY : Song.i
+
+# target to preprocess a source file
+Song.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/Song.cpp.i
+.PHONY : Song.cpp.i
+
+Song.s: Song.cpp.s
+.PHONY : Song.s
+
+# target to generate assembly for a file
+Song.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/Song.cpp.s
+.PHONY : Song.cpp.s
+
 UserInterface.obj: UserInterface.cpp.obj
 .PHONY : UserInterface.obj
 
@@ -266,6 +290,9 @@ help:
 	@echo ... Movie.obj
 	@echo ... Movie.i
 	@echo ... Movie.s
+	@echo ... Song.obj
+	@echo ... Song.i
+	@echo ... Song.s
 	@echo ... UserInterface.obj
 	@echo ... UserInterface.i
 	@echo ... UserInterface.s

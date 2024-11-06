@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj.d"
   "CMakeFiles/MySimpleLibrary.dir/Movie.cpp.obj"
   "CMakeFiles/MySimpleLibrary.dir/Movie.cpp.obj.d"
+  "CMakeFiles/MySimpleLibrary.dir/Song.cpp.obj"
+  "CMakeFiles/MySimpleLibrary.dir/Song.cpp.obj.d"
   "CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj"
   "CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj.d"
   "CMakeFiles/MySimpleLibrary.dir/main.cpp.obj"

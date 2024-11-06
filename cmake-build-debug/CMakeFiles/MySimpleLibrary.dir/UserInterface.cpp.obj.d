@@ -162,4 +162,5 @@ CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj: \
  C:\Users\Bogdan\CLionProjects\MySimpleLibrary\Book.h \
  C:\Users\Bogdan\CLionProjects\MySimpleLibrary\MediaFile.h \
  C:\Users\Bogdan\CLionProjects\MySimpleLibrary\Movie.h \
+ C:\Users\Bogdan\CLionProjects\MySimpleLibrary\Song.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits

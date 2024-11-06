@@ -10,6 +10,7 @@
 
 #include "Book.h"
 #include "Movie.h"
+#include "Song.h"
 
 UserInterface::UserInterface() : running(true) {
     std::cout << "UserInterface Constructor called" << std::endl;
@@ -42,6 +43,9 @@ void UserInterface::run() {
                     case 2:
                         add_movie_menu();
                         break;
+                    case 3:
+                        add_song_menu();
+                        break;
                     default:
                         break;
                 }
@@ -56,6 +60,9 @@ void UserInterface::run() {
                         break;
                     case 2:
                         view_movies();
+                        break;
+                    case 3:
+                        view_songs();
                         break;
                     default:
                         break;
@@ -83,12 +90,14 @@ void UserInterface::add_media_type() {
     std::cout << "-------------------------------" << std::endl;
     std::cout << "1. Add a Book." << std::endl;
     std::cout << "2. Add a Movie." << std::endl;
+    std::cout << "3. Add a Song" << std::endl;
 }
 
 void UserInterface::view_media_type() {
     std::cout << "-------------------------------" << std::endl;
     std::cout << "1. View Books." << std::endl;
     std::cout << "2. View Movies." << std::endl;
+    std::cout << "3. View Songs." << std::endl;
 }
 
 
@@ -155,6 +164,33 @@ void UserInterface::add_movie_menu() {
     movies.push_back(new_movie);
 }
 
+void UserInterface::add_song_menu() {
+    std::string title, author, format;
+    uint16_t publication_year;
+    uint32_t number_of_minutes;
+
+    std::cout << "Title: ";
+    std::cin >> std::ws;
+    std::getline(std::cin, title);
+
+    std::cout << "Author: ";
+    std::cin >> std::ws;
+    std::getline(std::cin, author);
+
+    std::cout << "Publication Year: ";
+    std::cin >> publication_year;
+    std::cout << "Number of Minutes: ";
+    std::cin >> number_of_minutes;
+
+    std::cout << "Format: ";
+    std::cin >> std::ws;
+    std::getline(std::cin, format);
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+    Song new_song(title, author, publication_year, number_of_minutes, format);
+    songs.push_back(new_song);
+}
+
 void UserInterface::view_books() {
     if (books.empty()) {
         std::cout << "No more books." << std::endl;
@@ -179,6 +215,17 @@ void UserInterface::view_movies() {
     }
 }
 
+void UserInterface::view_songs() {
+    if (songs.empty()) {
+        std::cout << "No more songs." << std::endl;
+        return;
+    }
+
+    for (const auto& song : songs) {
+        song.display_info();
+        std::cout << "------------------------------" << std::endl;
+    }
+}
 
 void UserInterface::exit_interface() {
     running = false;
@@ -194,5 +241,11 @@ void UserInterface::exit_interface() {
             delete movie;
         }
     }
+
+    // if(!songs.empty()) {
+    //     for (const auto& song : songs) {
+    //         delete song;
+    //     }
+    // }
     std::cout << "Exiting interface. Goodbye!" << std::endl;
 }

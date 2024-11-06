@@ -9,6 +9,7 @@
 
 #include "Book.h"
 #include "Movie.h"
+#include "Song.h"
 
 
 class UserInterface {
@@ -20,15 +21,21 @@ public:
     void view_media_type();
     void add_book_menu();
     void add_movie_menu();
+
+    void add_song_menu();
+
     void view_books();
 
 
     void view_movies();
 
+    void view_songs();
+
     void run();
 private:
     std::vector<Book> books;
     std::vector<Movie*> movies;
+    std::vector<Song> songs;
     bool running;
     void exit_interface();
 };

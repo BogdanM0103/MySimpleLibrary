@@ -8,4 +8,6 @@ add_executable(MySimpleLibrary
         MediaFile.h
         main.cpp
         Book.cpp
-        Movie.cpp Movie.h UserInterface.cpp UserInterface.h)
+        Movie.cpp Movie.h UserInterface.cpp UserInterface.h
+        Song.cpp
+        Song.h)
