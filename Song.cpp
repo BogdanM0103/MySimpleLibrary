@@ -21,6 +21,11 @@ Song::~Song() {
     std::cout << "Song Destructor called." << std::endl;
 }
 
+// Copy Constructor
+Song::Song(const Song& other) : MediaFile(other), duration_in_minutes(other.duration_in_minutes), format(new std::string(*other.format)) {
+    std::cout << "Song copy constructor called." << std::endl;
+}
+
 // Move Constructor
 Song::Song(const Song&& other)
     : MediaFile(other), duration_in_minutes(other.duration_in_minutes), format(other.format) {

@@ -15,6 +15,9 @@ public:
     // Destructor
     ~Song();
 
+    // Copy Constructor
+    Song(const Song& other);
+
     // Move Constructor
     Song(const Song &&other);
     void display_info() const override;

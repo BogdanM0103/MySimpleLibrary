@@ -185,7 +185,7 @@ void UserInterface::add_song_menu() {
     std::cout << "Format: ";
     std::cin >> std::ws;
     std::getline(std::cin, format);
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    // std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
     Song new_song(title, author, publication_year, number_of_minutes, format);
     songs.push_back(new_song);

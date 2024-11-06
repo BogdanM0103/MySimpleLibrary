@@ -42,3 +42,12 @@ void MediaFile::display_info() const {
     std::cout << "Author: " << *author << std::endl;
     std::cout << "Year: " << publication_year << std::endl;
 }
+
+// // Overloaded + operator to combine title, author, and publication year
+// MediaFile MediaFile::operator+(const MediaFile& other) const {
+//     return MediaFile(
+//         *title + " & " + *other.title,         // Combine titles
+//         *author + " & " + *other.author,       // Combine authors
+//         std::max(publication_year, other.publication_year) // Use the latest publication year
+//     );
+// }
