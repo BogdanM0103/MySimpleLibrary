@@ -16,10 +16,19 @@ class UserInterface {
 public:
     // Constructor
     UserInterface();
+
+    // Destructor
+    ~UserInterface();
     void display_menu();
     void add_media_type();
     void view_media_type();
     void add_book_menu();
+    void free_books();
+
+    void free_movies();
+
+    void free_songs();
+
     void add_movie_menu();
 
     void add_song_menu();
@@ -33,10 +42,10 @@ public:
 
     void run();
 private:
+    bool running;
     std::vector<Book*> books; // Stores pointers instead of objects
     std::vector<Movie*> movies;
-    std::vector<Song> songs;
-    bool running;
+    std::vector<Song*> songs;
     void exit_interface();
 };
 

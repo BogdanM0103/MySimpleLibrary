@@ -16,6 +16,14 @@ UserInterface::UserInterface() : running(true) {
     std::cout << "UserInterface Constructor called" << std::endl;
 }
 
+
+UserInterface::~UserInterface() {
+    std::cout << "UserInterface Destructor called" << std::endl;
+    free_books();
+    free_movies();
+    free_songs();
+}
+
 void UserInterface::run() {
     int temp_option;
     while (running) {
@@ -150,7 +158,7 @@ void UserInterface::add_movie_menu() {
     std::cout << "Publication Year: ";
     std::cin >> publication_year;
 
-    std::cout << "Number of Pages: ";
+    std::cout << "Number of Minutes: ";
     std::cin >> number_of_minutes;
 
     // Clear the newline character left by previous std::cin input
@@ -163,6 +171,9 @@ void UserInterface::add_movie_menu() {
     Movie* new_movie = new Movie(title, author, publication_year, number_of_minutes, description);
     // new_movie->display_info();
     movies.push_back(new_movie);
+
+    std::cout << "Movie Added Successfully!" << std::endl;
+    std::cout << "-------------------------------" << std::endl;
 }
 
 void UserInterface::add_song_menu() {
@@ -188,8 +199,12 @@ void UserInterface::add_song_menu() {
     std::getline(std::cin, format);
     // std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-    Song new_song(title, author, publication_year, number_of_minutes, format);
+    Song* new_song = new Song(title, author, publication_year, number_of_minutes, format);
     songs.push_back(new_song);
+
+    // We store pointers here
+    std::cout << "Song Added Successfully!" << std::endl;
+    std::cout << "-------------------------------" << std::endl;
 }
 
 void UserInterface::view_books() {
@@ -223,31 +238,42 @@ void UserInterface::view_songs() {
     }
 
     for (const auto& song : songs) {
-        song.display_info();
+        song->display_info();
         std::cout << "------------------------------" << std::endl;
     }
 }
 
 void UserInterface::exit_interface() {
+    // Turning this variable to false will lead to the interface shutting down..
     running = false;
+    std::cout << "Exiting interface. Goodbye!" << std::endl;
+}
 
+void UserInterface::free_books() {
     // Free allocated memory for books
     if (!books.empty()) {
         for (const auto& book : books) {
             delete book;
         }
     }
+    std::cout << "Freed books from Heap.." << std::endl;
+}
 
-    if(!movies.empty()) {
+void UserInterface::free_movies() {
+    // Free allocated memory for movies
+    if (!movies.empty()) {
         for (const auto& movie : movies) {
             delete movie;
         }
     }
+    std::cout << "Freed movies from Heap.." << std::endl;
+}
 
-    // if(!songs.empty()) {
-    //     for (const auto& song : songs) {
-    //         delete song;
-    //     }
-    // }
-    std::cout << "Exiting interface. Goodbye!" << std::endl;
+void UserInterface::free_songs() {
+    // Free allocated memory for songs
+    if (!songs.empty()) {
+        for (const auto& movie : movies) {
+            delete movie;
+        }
+    }
 }

@@ -68,108 +68,114 @@ include CMakeFiles/MySimpleLibrary.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MySimpleLibrary.dir/flags.make
 
-CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj: CMakeFiles/MySimpleLibrary.dir/flags.make
-CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj: C:/Users/Bogdan/CLionProjects/MySimpleLibrary/MediaFile.cpp
-CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj: CMakeFiles/MySimpleLibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bogdan\CLionProjects\MySimpleLibrary\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj -MF CMakeFiles\MySimpleLibrary.dir\MediaFile.cpp.obj.d -o CMakeFiles\MySimpleLibrary.dir\MediaFile.cpp.obj -c C:\Users\Bogdan\CLionProjects\MySimpleLibrary\MediaFile.cpp
+CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.obj: CMakeFiles/MySimpleLibrary.dir/flags.make
+CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.obj: CMakeFiles/MySimpleLibrary.dir/includes_CXX.rsp
+CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.obj: C:/Users/Bogdan/CLionProjects/MySimpleLibrary/src/MediaFile.cpp
+CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.obj: CMakeFiles/MySimpleLibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bogdan\CLionProjects\MySimpleLibrary\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.obj -MF CMakeFiles\MySimpleLibrary.dir\src\MediaFile.cpp.obj.d -o CMakeFiles\MySimpleLibrary.dir\src\MediaFile.cpp.obj -c C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\MediaFile.cpp
 
-CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bogdan\CLionProjects\MySimpleLibrary\MediaFile.cpp > CMakeFiles\MySimpleLibrary.dir\MediaFile.cpp.i
+CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\MediaFile.cpp > CMakeFiles\MySimpleLibrary.dir\src\MediaFile.cpp.i
 
-CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bogdan\CLionProjects\MySimpleLibrary\MediaFile.cpp -o CMakeFiles\MySimpleLibrary.dir\MediaFile.cpp.s
+CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\MediaFile.cpp -o CMakeFiles\MySimpleLibrary.dir\src\MediaFile.cpp.s
 
-CMakeFiles/MySimpleLibrary.dir/main.cpp.obj: CMakeFiles/MySimpleLibrary.dir/flags.make
-CMakeFiles/MySimpleLibrary.dir/main.cpp.obj: C:/Users/Bogdan/CLionProjects/MySimpleLibrary/main.cpp
-CMakeFiles/MySimpleLibrary.dir/main.cpp.obj: CMakeFiles/MySimpleLibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bogdan\CLionProjects\MySimpleLibrary\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MySimpleLibrary.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySimpleLibrary.dir/main.cpp.obj -MF CMakeFiles\MySimpleLibrary.dir\main.cpp.obj.d -o CMakeFiles\MySimpleLibrary.dir\main.cpp.obj -c C:\Users\Bogdan\CLionProjects\MySimpleLibrary\main.cpp
+CMakeFiles/MySimpleLibrary.dir/src/main.cpp.obj: CMakeFiles/MySimpleLibrary.dir/flags.make
+CMakeFiles/MySimpleLibrary.dir/src/main.cpp.obj: CMakeFiles/MySimpleLibrary.dir/includes_CXX.rsp
+CMakeFiles/MySimpleLibrary.dir/src/main.cpp.obj: C:/Users/Bogdan/CLionProjects/MySimpleLibrary/src/main.cpp
+CMakeFiles/MySimpleLibrary.dir/src/main.cpp.obj: CMakeFiles/MySimpleLibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bogdan\CLionProjects\MySimpleLibrary\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MySimpleLibrary.dir/src/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySimpleLibrary.dir/src/main.cpp.obj -MF CMakeFiles\MySimpleLibrary.dir\src\main.cpp.obj.d -o CMakeFiles\MySimpleLibrary.dir\src\main.cpp.obj -c C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\main.cpp
 
-CMakeFiles/MySimpleLibrary.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MySimpleLibrary.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bogdan\CLionProjects\MySimpleLibrary\main.cpp > CMakeFiles\MySimpleLibrary.dir\main.cpp.i
+CMakeFiles/MySimpleLibrary.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MySimpleLibrary.dir/src/main.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\main.cpp > CMakeFiles\MySimpleLibrary.dir\src\main.cpp.i
 
-CMakeFiles/MySimpleLibrary.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MySimpleLibrary.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bogdan\CLionProjects\MySimpleLibrary\main.cpp -o CMakeFiles\MySimpleLibrary.dir\main.cpp.s
+CMakeFiles/MySimpleLibrary.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MySimpleLibrary.dir/src/main.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\main.cpp -o CMakeFiles\MySimpleLibrary.dir\src\main.cpp.s
 
-CMakeFiles/MySimpleLibrary.dir/Book.cpp.obj: CMakeFiles/MySimpleLibrary.dir/flags.make
-CMakeFiles/MySimpleLibrary.dir/Book.cpp.obj: C:/Users/Bogdan/CLionProjects/MySimpleLibrary/Book.cpp
-CMakeFiles/MySimpleLibrary.dir/Book.cpp.obj: CMakeFiles/MySimpleLibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bogdan\CLionProjects\MySimpleLibrary\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MySimpleLibrary.dir/Book.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySimpleLibrary.dir/Book.cpp.obj -MF CMakeFiles\MySimpleLibrary.dir\Book.cpp.obj.d -o CMakeFiles\MySimpleLibrary.dir\Book.cpp.obj -c C:\Users\Bogdan\CLionProjects\MySimpleLibrary\Book.cpp
+CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.obj: CMakeFiles/MySimpleLibrary.dir/flags.make
+CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.obj: CMakeFiles/MySimpleLibrary.dir/includes_CXX.rsp
+CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.obj: C:/Users/Bogdan/CLionProjects/MySimpleLibrary/src/Book.cpp
+CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.obj: CMakeFiles/MySimpleLibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bogdan\CLionProjects\MySimpleLibrary\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.obj -MF CMakeFiles\MySimpleLibrary.dir\src\Book.cpp.obj.d -o CMakeFiles\MySimpleLibrary.dir\src\Book.cpp.obj -c C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\Book.cpp
 
-CMakeFiles/MySimpleLibrary.dir/Book.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MySimpleLibrary.dir/Book.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bogdan\CLionProjects\MySimpleLibrary\Book.cpp > CMakeFiles\MySimpleLibrary.dir\Book.cpp.i
+CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\Book.cpp > CMakeFiles\MySimpleLibrary.dir\src\Book.cpp.i
 
-CMakeFiles/MySimpleLibrary.dir/Book.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MySimpleLibrary.dir/Book.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bogdan\CLionProjects\MySimpleLibrary\Book.cpp -o CMakeFiles\MySimpleLibrary.dir\Book.cpp.s
+CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\Book.cpp -o CMakeFiles\MySimpleLibrary.dir\src\Book.cpp.s
 
-CMakeFiles/MySimpleLibrary.dir/Movie.cpp.obj: CMakeFiles/MySimpleLibrary.dir/flags.make
-CMakeFiles/MySimpleLibrary.dir/Movie.cpp.obj: C:/Users/Bogdan/CLionProjects/MySimpleLibrary/Movie.cpp
-CMakeFiles/MySimpleLibrary.dir/Movie.cpp.obj: CMakeFiles/MySimpleLibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bogdan\CLionProjects\MySimpleLibrary\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MySimpleLibrary.dir/Movie.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySimpleLibrary.dir/Movie.cpp.obj -MF CMakeFiles\MySimpleLibrary.dir\Movie.cpp.obj.d -o CMakeFiles\MySimpleLibrary.dir\Movie.cpp.obj -c C:\Users\Bogdan\CLionProjects\MySimpleLibrary\Movie.cpp
+CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.obj: CMakeFiles/MySimpleLibrary.dir/flags.make
+CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.obj: CMakeFiles/MySimpleLibrary.dir/includes_CXX.rsp
+CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.obj: C:/Users/Bogdan/CLionProjects/MySimpleLibrary/src/Movie.cpp
+CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.obj: CMakeFiles/MySimpleLibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bogdan\CLionProjects\MySimpleLibrary\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.obj -MF CMakeFiles\MySimpleLibrary.dir\src\Movie.cpp.obj.d -o CMakeFiles\MySimpleLibrary.dir\src\Movie.cpp.obj -c C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\Movie.cpp
 
-CMakeFiles/MySimpleLibrary.dir/Movie.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MySimpleLibrary.dir/Movie.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bogdan\CLionProjects\MySimpleLibrary\Movie.cpp > CMakeFiles\MySimpleLibrary.dir\Movie.cpp.i
+CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\Movie.cpp > CMakeFiles\MySimpleLibrary.dir\src\Movie.cpp.i
 
-CMakeFiles/MySimpleLibrary.dir/Movie.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MySimpleLibrary.dir/Movie.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bogdan\CLionProjects\MySimpleLibrary\Movie.cpp -o CMakeFiles\MySimpleLibrary.dir\Movie.cpp.s
+CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\Movie.cpp -o CMakeFiles\MySimpleLibrary.dir\src\Movie.cpp.s
 
-CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj: CMakeFiles/MySimpleLibrary.dir/flags.make
-CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj: C:/Users/Bogdan/CLionProjects/MySimpleLibrary/UserInterface.cpp
-CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj: CMakeFiles/MySimpleLibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bogdan\CLionProjects\MySimpleLibrary\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj -MF CMakeFiles\MySimpleLibrary.dir\UserInterface.cpp.obj.d -o CMakeFiles\MySimpleLibrary.dir\UserInterface.cpp.obj -c C:\Users\Bogdan\CLionProjects\MySimpleLibrary\UserInterface.cpp
+CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.obj: CMakeFiles/MySimpleLibrary.dir/flags.make
+CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.obj: CMakeFiles/MySimpleLibrary.dir/includes_CXX.rsp
+CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.obj: C:/Users/Bogdan/CLionProjects/MySimpleLibrary/src/UserInterface.cpp
+CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.obj: CMakeFiles/MySimpleLibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bogdan\CLionProjects\MySimpleLibrary\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.obj -MF CMakeFiles\MySimpleLibrary.dir\src\UserInterface.cpp.obj.d -o CMakeFiles\MySimpleLibrary.dir\src\UserInterface.cpp.obj -c C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\UserInterface.cpp
 
-CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bogdan\CLionProjects\MySimpleLibrary\UserInterface.cpp > CMakeFiles\MySimpleLibrary.dir\UserInterface.cpp.i
+CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\UserInterface.cpp > CMakeFiles\MySimpleLibrary.dir\src\UserInterface.cpp.i
 
-CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bogdan\CLionProjects\MySimpleLibrary\UserInterface.cpp -o CMakeFiles\MySimpleLibrary.dir\UserInterface.cpp.s
+CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\UserInterface.cpp -o CMakeFiles\MySimpleLibrary.dir\src\UserInterface.cpp.s
 
-CMakeFiles/MySimpleLibrary.dir/Song.cpp.obj: CMakeFiles/MySimpleLibrary.dir/flags.make
-CMakeFiles/MySimpleLibrary.dir/Song.cpp.obj: C:/Users/Bogdan/CLionProjects/MySimpleLibrary/Song.cpp
-CMakeFiles/MySimpleLibrary.dir/Song.cpp.obj: CMakeFiles/MySimpleLibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bogdan\CLionProjects\MySimpleLibrary\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MySimpleLibrary.dir/Song.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySimpleLibrary.dir/Song.cpp.obj -MF CMakeFiles\MySimpleLibrary.dir\Song.cpp.obj.d -o CMakeFiles\MySimpleLibrary.dir\Song.cpp.obj -c C:\Users\Bogdan\CLionProjects\MySimpleLibrary\Song.cpp
+CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.obj: CMakeFiles/MySimpleLibrary.dir/flags.make
+CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.obj: CMakeFiles/MySimpleLibrary.dir/includes_CXX.rsp
+CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.obj: C:/Users/Bogdan/CLionProjects/MySimpleLibrary/src/Song.cpp
+CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.obj: CMakeFiles/MySimpleLibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bogdan\CLionProjects\MySimpleLibrary\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.obj -MF CMakeFiles\MySimpleLibrary.dir\src\Song.cpp.obj.d -o CMakeFiles\MySimpleLibrary.dir\src\Song.cpp.obj -c C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\Song.cpp
 
-CMakeFiles/MySimpleLibrary.dir/Song.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MySimpleLibrary.dir/Song.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bogdan\CLionProjects\MySimpleLibrary\Song.cpp > CMakeFiles\MySimpleLibrary.dir\Song.cpp.i
+CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\Song.cpp > CMakeFiles\MySimpleLibrary.dir\src\Song.cpp.i
 
-CMakeFiles/MySimpleLibrary.dir/Song.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MySimpleLibrary.dir/Song.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bogdan\CLionProjects\MySimpleLibrary\Song.cpp -o CMakeFiles\MySimpleLibrary.dir\Song.cpp.s
+CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bogdan\CLionProjects\MySimpleLibrary\src\Song.cpp -o CMakeFiles\MySimpleLibrary.dir\src\Song.cpp.s
 
 # Object files for target MySimpleLibrary
 MySimpleLibrary_OBJECTS = \
-"CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj" \
-"CMakeFiles/MySimpleLibrary.dir/main.cpp.obj" \
-"CMakeFiles/MySimpleLibrary.dir/Book.cpp.obj" \
-"CMakeFiles/MySimpleLibrary.dir/Movie.cpp.obj" \
-"CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj" \
-"CMakeFiles/MySimpleLibrary.dir/Song.cpp.obj"
+"CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.obj" \
+"CMakeFiles/MySimpleLibrary.dir/src/main.cpp.obj" \
+"CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.obj" \
+"CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.obj" \
+"CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.obj" \
+"CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.obj"
 
 # External object files for target MySimpleLibrary
 MySimpleLibrary_EXTERNAL_OBJECTS =
 
-MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj
-MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/main.cpp.obj
-MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/Book.cpp.obj
-MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/Movie.cpp.obj
-MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj
-MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/Song.cpp.obj
+MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.obj
+MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/src/main.cpp.obj
+MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.obj
+MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.obj
+MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.obj
+MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.obj
 MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/build.make
 MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/linkLibs.rsp
 MySimpleLibrary.exe: CMakeFiles/MySimpleLibrary.dir/objects1.rsp

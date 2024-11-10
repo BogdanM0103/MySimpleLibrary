@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Bogdan/CLionProjects/MySimpleLibrary/Book.cpp" "CMakeFiles/MySimpleLibrary.dir/Book.cpp.obj" "gcc" "CMakeFiles/MySimpleLibrary.dir/Book.cpp.obj.d"
-  "C:/Users/Bogdan/CLionProjects/MySimpleLibrary/MediaFile.cpp" "CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj" "gcc" "CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj.d"
-  "C:/Users/Bogdan/CLionProjects/MySimpleLibrary/Movie.cpp" "CMakeFiles/MySimpleLibrary.dir/Movie.cpp.obj" "gcc" "CMakeFiles/MySimpleLibrary.dir/Movie.cpp.obj.d"
-  "C:/Users/Bogdan/CLionProjects/MySimpleLibrary/Song.cpp" "CMakeFiles/MySimpleLibrary.dir/Song.cpp.obj" "gcc" "CMakeFiles/MySimpleLibrary.dir/Song.cpp.obj.d"
-  "C:/Users/Bogdan/CLionProjects/MySimpleLibrary/UserInterface.cpp" "CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj" "gcc" "CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj.d"
-  "C:/Users/Bogdan/CLionProjects/MySimpleLibrary/main.cpp" "CMakeFiles/MySimpleLibrary.dir/main.cpp.obj" "gcc" "CMakeFiles/MySimpleLibrary.dir/main.cpp.obj.d"
+  "C:/Users/Bogdan/CLionProjects/MySimpleLibrary/src/Book.cpp" "CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.obj" "gcc" "CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.obj.d"
+  "C:/Users/Bogdan/CLionProjects/MySimpleLibrary/src/MediaFile.cpp" "CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.obj" "gcc" "CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.obj.d"
+  "C:/Users/Bogdan/CLionProjects/MySimpleLibrary/src/Movie.cpp" "CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.obj" "gcc" "CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.obj.d"
+  "C:/Users/Bogdan/CLionProjects/MySimpleLibrary/src/Song.cpp" "CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.obj" "gcc" "CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.obj.d"
+  "C:/Users/Bogdan/CLionProjects/MySimpleLibrary/src/UserInterface.cpp" "CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.obj" "gcc" "CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.obj.d"
+  "C:/Users/Bogdan/CLionProjects/MySimpleLibrary/src/main.cpp" "CMakeFiles/MySimpleLibrary.dir/src/main.cpp.obj" "gcc" "CMakeFiles/MySimpleLibrary.dir/src/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
