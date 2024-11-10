@@ -19,6 +19,11 @@ public:
     // // Virtual + operator for derived classes to override
     // virtual MediaFile operator+(const MediaFile& other) const;
 
+    // Getters
+    const std::string* get_title() const;
+    const std::string* get_author() const;
+    const uint16_t get_year() const;
+
 private:
     mutable std::string* title; // Pointer member variable
     mutable std::string* author; // Pointer member variable

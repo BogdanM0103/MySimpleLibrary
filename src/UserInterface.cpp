@@ -5,8 +5,10 @@
 #include <iostream>
 #include "UserInterface.h"
 
+#include <algorithm>
 #include <cstdint>
 #include <limits>
+#include <string.h>
 
 #include "Book.h"
 #include "Movie.h"
@@ -31,10 +33,10 @@ void UserInterface::run() {
         std::cout << "Enter your option: ";
         std::cin >> temp_option;
 
-        if (std::cin.fail() || temp_option < 1 || temp_option > 3) {
+        if (std::cin.fail() || temp_option < 1 || temp_option > 4) {
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Invalid input. Please enter a number between 1 and 3." << std::endl;
+            std::cout << "Invalid input. Please enter a number between 1 and 4." << std::endl;
             continue;
         }
         uint8_t option = static_cast<uint8_t>(temp_option);
@@ -77,6 +79,22 @@ void UserInterface::run() {
                 }
                 break;
             case 3:
+                duplicate_media_type();
+                std::cout << "Choose media type:" << std::endl;
+                std::cin >> media_option;
+                switch (media_option) {
+                    case 1:
+                        duplicate_book();
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 4:
                 exit_interface();
                 break;
             default:
@@ -91,7 +109,8 @@ void UserInterface::display_menu() {
     std::cout << "Choose an option" << std::endl;
     std::cout << "1. Add a Media File" << std::endl;
     std::cout << "2. View Media Files" << std::endl;
-    std::cout << "3. Exit." << std::endl;
+    std::cout << "3. Duplicate Media Files" << std::endl;
+    std::cout << "4. Exit." << std::endl;
 }
 
 void UserInterface::add_media_type() {
@@ -255,8 +274,9 @@ void UserInterface::free_books() {
         for (const auto& book : books) {
             delete book;
         }
+        std::cout << "Freed books from Heap.." << std::endl;
     }
-    std::cout << "Freed books from Heap.." << std::endl;
+
 }
 
 void UserInterface::free_movies() {
@@ -265,15 +285,37 @@ void UserInterface::free_movies() {
         for (const auto& movie : movies) {
             delete movie;
         }
+        std::cout << "Freed movies from Heap.." << std::endl;
     }
-    std::cout << "Freed movies from Heap.." << std::endl;
+
 }
 
 void UserInterface::free_songs() {
     // Free allocated memory for songs
     if (!songs.empty()) {
-        for (const auto& movie : movies) {
-            delete movie;
+        for (const auto& song : songs) {
+            delete song;
         }
+        std::cout << "Freed songs from Heap.." << std::endl;
     }
+}
+
+void UserInterface::duplicate_media_type() {
+    std::cout << "Choose media type:" << std::endl;
+    std::cout << "1. Book" << std::endl;
+    std::cout << "2. Movie" << std::endl;
+    std::cout << "3. Song" << std::endl;
+}
+
+void UserInterface::duplicate_book() {
+    if (books.empty()) {
+        std::cout << "Nothing to duplicate.." << std::endl;
+        return;
+    }
+
+    std::cout << "Enter Book Title you want to duplicate:";
+    std::string title;
+    std::cin >> std::ws; // Clear any leading whitespace
+    std::getline(std::cin, title); // Read the full title
+    // Work in progress
 }
