@@ -33,7 +33,7 @@ public:
 
     void run();
 private:
-    std::vector<Book> books;
+    std::vector<Book*> books; // Stores pointers instead of objects
     std::vector<Movie*> movies;
     std::vector<Song> songs;
     bool running;

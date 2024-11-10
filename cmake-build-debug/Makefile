@@ -128,149 +128,149 @@ MySimpleLibrary/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/build
 .PHONY : MySimpleLibrary/fast
 
-Book.obj: Book.cpp.obj
-.PHONY : Book.obj
+src/Book.obj: src/Book.cpp.obj
+.PHONY : src/Book.obj
 
 # target to build an object file
-Book.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/Book.cpp.obj
-.PHONY : Book.cpp.obj
+src/Book.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.obj
+.PHONY : src/Book.cpp.obj
 
-Book.i: Book.cpp.i
-.PHONY : Book.i
+src/Book.i: src/Book.cpp.i
+.PHONY : src/Book.i
 
 # target to preprocess a source file
-Book.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/Book.cpp.i
-.PHONY : Book.cpp.i
+src/Book.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.i
+.PHONY : src/Book.cpp.i
 
-Book.s: Book.cpp.s
-.PHONY : Book.s
+src/Book.s: src/Book.cpp.s
+.PHONY : src/Book.s
 
 # target to generate assembly for a file
-Book.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/Book.cpp.s
-.PHONY : Book.cpp.s
+src/Book.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/Book.cpp.s
+.PHONY : src/Book.cpp.s
 
-MediaFile.obj: MediaFile.cpp.obj
-.PHONY : MediaFile.obj
+src/MediaFile.obj: src/MediaFile.cpp.obj
+.PHONY : src/MediaFile.obj
 
 # target to build an object file
-MediaFile.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.obj
-.PHONY : MediaFile.cpp.obj
+src/MediaFile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.obj
+.PHONY : src/MediaFile.cpp.obj
 
-MediaFile.i: MediaFile.cpp.i
-.PHONY : MediaFile.i
+src/MediaFile.i: src/MediaFile.cpp.i
+.PHONY : src/MediaFile.i
 
 # target to preprocess a source file
-MediaFile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.i
-.PHONY : MediaFile.cpp.i
+src/MediaFile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.i
+.PHONY : src/MediaFile.cpp.i
 
-MediaFile.s: MediaFile.cpp.s
-.PHONY : MediaFile.s
+src/MediaFile.s: src/MediaFile.cpp.s
+.PHONY : src/MediaFile.s
 
 # target to generate assembly for a file
-MediaFile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/MediaFile.cpp.s
-.PHONY : MediaFile.cpp.s
+src/MediaFile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/MediaFile.cpp.s
+.PHONY : src/MediaFile.cpp.s
 
-Movie.obj: Movie.cpp.obj
-.PHONY : Movie.obj
+src/Movie.obj: src/Movie.cpp.obj
+.PHONY : src/Movie.obj
 
 # target to build an object file
-Movie.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/Movie.cpp.obj
-.PHONY : Movie.cpp.obj
+src/Movie.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.obj
+.PHONY : src/Movie.cpp.obj
 
-Movie.i: Movie.cpp.i
-.PHONY : Movie.i
+src/Movie.i: src/Movie.cpp.i
+.PHONY : src/Movie.i
 
 # target to preprocess a source file
-Movie.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/Movie.cpp.i
-.PHONY : Movie.cpp.i
+src/Movie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.i
+.PHONY : src/Movie.cpp.i
 
-Movie.s: Movie.cpp.s
-.PHONY : Movie.s
+src/Movie.s: src/Movie.cpp.s
+.PHONY : src/Movie.s
 
 # target to generate assembly for a file
-Movie.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/Movie.cpp.s
-.PHONY : Movie.cpp.s
+src/Movie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/Movie.cpp.s
+.PHONY : src/Movie.cpp.s
 
-Song.obj: Song.cpp.obj
-.PHONY : Song.obj
+src/Song.obj: src/Song.cpp.obj
+.PHONY : src/Song.obj
 
 # target to build an object file
-Song.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/Song.cpp.obj
-.PHONY : Song.cpp.obj
+src/Song.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.obj
+.PHONY : src/Song.cpp.obj
 
-Song.i: Song.cpp.i
-.PHONY : Song.i
+src/Song.i: src/Song.cpp.i
+.PHONY : src/Song.i
 
 # target to preprocess a source file
-Song.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/Song.cpp.i
-.PHONY : Song.cpp.i
+src/Song.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.i
+.PHONY : src/Song.cpp.i
 
-Song.s: Song.cpp.s
-.PHONY : Song.s
+src/Song.s: src/Song.cpp.s
+.PHONY : src/Song.s
 
 # target to generate assembly for a file
-Song.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/Song.cpp.s
-.PHONY : Song.cpp.s
+src/Song.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/Song.cpp.s
+.PHONY : src/Song.cpp.s
 
-UserInterface.obj: UserInterface.cpp.obj
-.PHONY : UserInterface.obj
+src/UserInterface.obj: src/UserInterface.cpp.obj
+.PHONY : src/UserInterface.obj
 
 # target to build an object file
-UserInterface.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.obj
-.PHONY : UserInterface.cpp.obj
+src/UserInterface.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.obj
+.PHONY : src/UserInterface.cpp.obj
 
-UserInterface.i: UserInterface.cpp.i
-.PHONY : UserInterface.i
+src/UserInterface.i: src/UserInterface.cpp.i
+.PHONY : src/UserInterface.i
 
 # target to preprocess a source file
-UserInterface.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.i
-.PHONY : UserInterface.cpp.i
+src/UserInterface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.i
+.PHONY : src/UserInterface.cpp.i
 
-UserInterface.s: UserInterface.cpp.s
-.PHONY : UserInterface.s
+src/UserInterface.s: src/UserInterface.cpp.s
+.PHONY : src/UserInterface.s
 
 # target to generate assembly for a file
-UserInterface.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/UserInterface.cpp.s
-.PHONY : UserInterface.cpp.s
+src/UserInterface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/UserInterface.cpp.s
+.PHONY : src/UserInterface.cpp.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MySimpleLibrary.dir\build.make CMakeFiles/MySimpleLibrary.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -281,24 +281,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MySimpleLibrary
-	@echo ... Book.obj
-	@echo ... Book.i
-	@echo ... Book.s
-	@echo ... MediaFile.obj
-	@echo ... MediaFile.i
-	@echo ... MediaFile.s
-	@echo ... Movie.obj
-	@echo ... Movie.i
-	@echo ... Movie.s
-	@echo ... Song.obj
-	@echo ... Song.i
-	@echo ... Song.s
-	@echo ... UserInterface.obj
-	@echo ... UserInterface.i
-	@echo ... UserInterface.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... src/Book.obj
+	@echo ... src/Book.i
+	@echo ... src/Book.s
+	@echo ... src/MediaFile.obj
+	@echo ... src/MediaFile.i
+	@echo ... src/MediaFile.s
+	@echo ... src/Movie.obj
+	@echo ... src/Movie.i
+	@echo ... src/Movie.s
+	@echo ... src/Song.obj
+	@echo ... src/Song.i
+	@echo ... src/Song.s
+	@echo ... src/UserInterface.obj
+	@echo ... src/UserInterface.i
+	@echo ... src/UserInterface.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 

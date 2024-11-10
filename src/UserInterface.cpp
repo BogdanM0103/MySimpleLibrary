@@ -126,10 +126,11 @@ void UserInterface::add_book_menu() {
     std::cout << "Description: ";
     std::getline(std::cin, description);  // Now read the full description
 
-    // We store objects here
-    Book new_book(title, author, publication_year, number_of_pages, description);
-    // new_book.display_info();
+    // Allocate a new Book Object and add the pointer to the vector
+    Book* new_book = new Book(title, author, publication_year, number_of_pages, description);
     books.push_back(new_book);
+
+    std::cout << "Book Added Successfully!" << std::endl;
     std::cout << "-------------------------------" << std::endl;
 }
 
@@ -198,7 +199,7 @@ void UserInterface::view_books() {
     }
 
     for (const auto& book : books) {
-        book.display_info();
+        book->display_info();
         std::cout << "-------------------------------" << std::endl;
     }
 }
@@ -229,12 +230,13 @@ void UserInterface::view_songs() {
 
 void UserInterface::exit_interface() {
     running = false;
-    // For Books its not needed to free the memory at the end because they are destroyed earlier in the program
-    // if (!books.empty()) {
-    //     for (const auto& book : books) {
-    //         // delete book;
-    //     }
-    // }
+
+    // Free allocated memory for books
+    if (!books.empty()) {
+        for (const auto& book : books) {
+            delete book;
+        }
+    }
 
     if(!movies.empty()) {
         for (const auto& movie : movies) {
