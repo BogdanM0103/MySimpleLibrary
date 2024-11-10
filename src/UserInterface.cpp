@@ -317,5 +317,16 @@ void UserInterface::duplicate_book() {
     std::string title;
     std::cin >> std::ws; // Clear any leading whitespace
     std::getline(std::cin, title); // Read the full title
-    // Work in progress
+
+    auto it = std::find_if(books.begin(), books.end(), [&title](Book* book) {
+        return *book->get_title() == title;
+    });
+
+    if (it != books.end()) {
+        Book* duplicate_book = new Book(**it);
+        books.push_back(duplicate_book);
+        std::cout << "Book " << title << " duplicated successfully!" << std::endl;
+    } else {
+        std::cout << "No such book." << std::endl;
+    }
 }
