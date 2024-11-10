@@ -87,8 +87,10 @@ void UserInterface::run() {
                         duplicate_book();
                         break;
                     case 2:
+                        duplicate_movie();
                         break;
                     case 3:
+                        duplicate_song();
                         break;
                     default:
                         break;
@@ -328,5 +330,53 @@ void UserInterface::duplicate_book() {
         std::cout << "Book " << title << " duplicated successfully!" << std::endl;
     } else {
         std::cout << "No such book." << std::endl;
+    }
+}
+
+void UserInterface::duplicate_movie() {
+    if (movies.empty()) {
+        std::cout << "Nothing to duplicate.." << std::endl;
+        return;
+    }
+
+    std::cout << "Enter Movie Title you want to duplicate:";
+    std::string title;
+    std::cin >> std::ws; // Clear any leading whitespace
+    std::getline(std::cin, title); // Read the full title
+
+    auto it = std::find_if(movies.begin(), movies.end(), [&title](Movie* movie) {
+        return *movie->get_title() == title;
+    });
+
+    if (it != movies.end()) {
+        Movie* duplicate_movie = new Movie(**it);
+        movies.push_back(duplicate_movie);
+        std::cout << "Movie " << title << " duplicated successfully!" << std::endl;
+    } else {
+        std::cout << "No such movie." << std::endl;
+    }
+}
+
+void UserInterface::duplicate_song() {
+    if (songs.empty()) {
+        std::cout << "Nothing to duplicate.." << std::endl;
+        return;
+    }
+
+    std::cout << "Enter Song Title you want to duplicate:";
+    std::string title;
+    std::cin >> std::ws; // Clear any leading whitespace
+    std::getline(std::cin, title); // Read the full title
+
+    auto it = std::find_if(songs.begin(), songs.end(), [&title](Song* song) {
+        return *song->get_title() == title;
+    });
+
+    if (it != songs.end()) {
+        Song* duplicate_song = new Song(**it);
+        songs.push_back(duplicate_song);
+        std::cout << "Song " << title << " duplicated successfully!" << std::endl;
+    } else {
+        std::cout << "No such song." << std::endl;
     }
 }

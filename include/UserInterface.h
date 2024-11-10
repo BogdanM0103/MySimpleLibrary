@@ -55,6 +55,10 @@ public:
 
     void duplicate_book();
 
+    void duplicate_movie();
+
+    void duplicate_song();
+
     // Starts the Interface
     void run();
 
