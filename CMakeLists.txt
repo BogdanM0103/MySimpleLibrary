@@ -3,11 +3,15 @@ project(MySimpleLibrary)
 
 set(CMAKE_CXX_STANDARD 20)
 
+# Add include directory
+include_directories(include)
+
+# Add executables with updated path
 add_executable(MySimpleLibrary
-        MediaFile.cpp
-        MediaFile.h
-        main.cpp
-        Book.cpp
-        Movie.cpp Movie.h UserInterface.cpp UserInterface.h
-        Song.cpp
-        Song.h)
+        src/MediaFile.cpp
+        src/main.cpp
+        src/Book.cpp
+        src/Movie.cpp
+        src/UserInterface.cpp
+        src/Song.cpp
+)
