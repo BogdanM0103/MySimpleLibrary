@@ -40,6 +40,10 @@ Book::~Book() {
     delete description; // Free memory allocated for description
 }
 
+const std::string * Book::get_title() const {
+    return MediaFile::get_title();
+}
+
 // Override display_info method
 void Book::display_info() const {
     MediaFile::display_info(); // Call the base class display_info

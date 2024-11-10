@@ -21,6 +21,10 @@ public:
     // Destructor
     ~Book();
 
+    // Getters
+    const std::string* get_title() const;
+
+
     // Override display_info method to include additional information
     void display_info() const override; // This will now correctly override
 

@@ -20,6 +20,8 @@ public:
 
     // Move Constructor
     Song(const Song &&other);
+
+    const std::string* get_title() const;
     void display_info() const override;
 
 private:

@@ -2,6 +2,8 @@
 //
 // Created by Bogdan on 11/4/2024.
 //
+#include <iostream>
+
 #include "Book.h"
 #include "Movie.h"
 #include "UserInterface.h"

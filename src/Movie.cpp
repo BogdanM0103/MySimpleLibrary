@@ -31,6 +31,10 @@ Movie::~Movie() {
     std::cout << "Movie destructor called" << std::endl;
 }
 
+const std::string* Movie::get_title() const {
+    return MediaFile::get_title();
+}
+
 void Movie::display_info() const {
     MediaFile::display_info();
     std::cout << "Length in minutes:" << length << std::endl;

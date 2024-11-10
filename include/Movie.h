@@ -20,6 +20,8 @@ public:
 
     // Destructor
     ~Movie();
+
+    const std::string* get_title() const;
     void display_info() const override;
 private:
     int length;

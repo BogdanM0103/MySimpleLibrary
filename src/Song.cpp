@@ -32,6 +32,10 @@ Song::Song(const Song&& other)
     std::cout << "Song Move Constructor called." << std::endl;
 }
 
+const std::string * Song::get_title() const {
+    return MediaFile::get_title();
+}
+
 void Song::display_info() const {
     MediaFile::display_info();
     std::cout << "duration_in_minutes: " << duration_in_minutes << std::endl;
