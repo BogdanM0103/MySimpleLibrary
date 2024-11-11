@@ -59,6 +59,10 @@ public:
 
     void duplicate_song();
 
+    void add_to_favorites_menu();
+
+    void view_favorites();
+
     // Starts the Interface
     void run();
 
@@ -69,6 +73,7 @@ private:
     std::vector<Book*> books; // Stores pointers instead of objects
     std::vector<Movie*> movies;
     std::vector<Song*> songs;
+    std::vector<MediaFile*> favorites;
 };
 
 

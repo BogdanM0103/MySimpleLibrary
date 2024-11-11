@@ -8,7 +8,6 @@
 #include <algorithm>
 #include <cstdint>
 #include <limits>
-#include <string.h>
 
 #include "Book.h"
 #include "Movie.h"
@@ -33,10 +32,10 @@ void UserInterface::run() {
         std::cout << "Enter your option: ";
         std::cin >> temp_option;
 
-        if (std::cin.fail() || temp_option < 1 || temp_option > 4) {
+        if (std::cin.fail() || temp_option < 1 || temp_option > 6) {
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Invalid input. Please enter a number between 1 and 4." << std::endl;
+            std::cout << "Invalid input. Please enter a number between 1 and 6." << std::endl;
             continue;
         }
         uint8_t option = static_cast<uint8_t>(temp_option);
@@ -97,6 +96,14 @@ void UserInterface::run() {
                 }
                 break;
             case 4:
+                // Add to favorites
+                add_to_favorites_menu();
+                break;
+            case 5:
+                // View favorites
+                view_favorites();
+                break;
+            case 6:
                 exit_interface();
                 break;
             default:
@@ -112,7 +119,9 @@ void UserInterface::display_menu() {
     std::cout << "1. Add a Media File" << std::endl;
     std::cout << "2. View Media Files" << std::endl;
     std::cout << "3. Duplicate Media Files" << std::endl;
-    std::cout << "4. Exit." << std::endl;
+    std::cout << "4. Add to favorites" << std::endl;
+    std::cout << "5. View favorites" << std::endl;
+    std::cout << "6. Exit." << std::endl;
 }
 
 void UserInterface::add_media_type() {
@@ -378,5 +387,59 @@ void UserInterface::duplicate_song() {
         std::cout << "Song " << title << " duplicated successfully!" << std::endl;
     } else {
         std::cout << "No such song." << std::endl;
+    }
+}
+
+
+void UserInterface::add_to_favorites_menu() {
+    if (books.empty() && movies.empty() && songs.empty()) {
+        std::cout << "No books or movies and songs." << std::endl;
+        return;
+    } else {
+        std::cout << "Enter Media File title to Add:" << std::endl;
+        std::string title;
+        std::cin >> std::ws;
+        std::getline(std::cin, title);
+
+        auto book_it = std::find_if(books.begin(), books.end(), [&title](Book* book) {
+            return *book->get_title() == title;
+        });
+        if (book_it != books.end() && *book_it) {
+            favorites.push_back(static_cast<MediaFile*>(std::move(*book_it)));  // Cast to MediaFile* and move
+            *book_it = nullptr;  // Set original pointer to nullptr
+            std::cout << "Book \"" << title << "\" moved to favorites." << std::endl;
+            return;
+        }
+
+        auto movie_it = std::find_if(movies.begin(), movies.end(), [&title](Movie* movie) {
+            return *movie->get_title() == title;
+        });
+        if (movie_it != movies.end() && *movie_it) {
+            favorites.push_back(static_cast<MediaFile*>(std::move(*movie_it)));  // Cast to MediaFile* and move
+            *movie_it = nullptr;  // Set original pointer to nullptr
+            std::cout << "Movie \"" << title << "\" moved to favorites." << std::endl;
+            return;
+        }
+
+        auto song_it = std::find_if(songs.begin(), songs.end(), [&title](Song* song) {
+            return *song->get_title() == title;
+        });
+        if (song_it != songs.end() && *song_it) {
+            favorites.push_back(std::move(*song_it));  // Cast to MediaFile* and move
+            *song_it = nullptr;  // Set original pointer to nullptr
+            std::cout << "Song \"" << title << "\" moved to favorites." << std::endl;
+            // return;
+        }
+    }
+}
+
+void UserInterface::view_favorites() {
+    if (favorites.empty()) {
+        std::cout << "No favorites found." << std::endl;
+    }
+
+    for (auto favorite : favorites) {
+        favorite->display_info();
+        std::cout << "-------------------------------" << std::endl;
     }
 }

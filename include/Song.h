@@ -7,7 +7,7 @@
 #include "MediaFile.h"
 
 
-class Song : MediaFile {
+class Song : public MediaFile{
 public:
     // Constructor
     Song(const std::string& title, const std::string& author, const uint16_t publication_year, const uint32_t duration_in_minutes, const std::string& format);
