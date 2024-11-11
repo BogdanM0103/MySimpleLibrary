@@ -29,21 +29,16 @@ public:
     // Menu for media type to choose viewing
     void view_media_type();
 
-    // Handles adding books
-    void add_book_menu();
-
     // Frees book vector from heap
     void free_books();
 
-    // Add movie
-    void add_movie_menu();
     // Frees movies vector from heap
     void free_movies();
 
     void add_media(uint8_t option);
 
-    // Add song
-    void add_song_menu();
+    void view_media(uint8_t option);
+
     // Free songs
     void free_songs();
 
@@ -55,11 +50,7 @@ public:
 
     void duplicate_media_type();
 
-    void duplicate_book();
-
-    void duplicate_movie();
-
-    void duplicate_song();
+    void duplicate_media(uint8_t media_option);
 
     void add_to_favorites_menu();
 
