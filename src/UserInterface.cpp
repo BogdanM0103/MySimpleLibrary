@@ -199,6 +199,7 @@ void UserInterface::add_media(uint8_t option) {
 }
 
 void UserInterface::view_media(uint8_t media_option) {
+    bool is_empty = true;
     switch (media_option) {
         case 1:
             if (books.empty()) {
@@ -206,7 +207,10 @@ void UserInterface::view_media(uint8_t media_option) {
                 return;
             }
             for (const auto& book : books) {
-                book->display_info();
+                if (book) {
+                    book->display_info();
+                    is_empty = false;
+                }
             }
             break;
 
@@ -216,7 +220,11 @@ void UserInterface::view_media(uint8_t media_option) {
                 return;
             }
             for (const auto& movie : movies) {
-                movie->display_info();
+                if (movie) {
+                    movie->display_info();
+                    is_empty = false;
+                }
+
             }
             break;
 
@@ -226,13 +234,19 @@ void UserInterface::view_media(uint8_t media_option) {
                 return;
             }
             for (const auto& song : songs) {
-                song->display_info();
+                if (song) {
+                    song->display_info();
+                    is_empty = false;
+                }
             }
             break;
 
         default:
             std::cout << "Invalid option." << std::endl;
             break;
+    }
+    if (is_empty == true) {
+        std::cout << "Nothing to view.." << std::endl;
     }
 }
 
@@ -343,35 +357,53 @@ void UserInterface::add_to_favorites_menu() {
         std::cin >> std::ws;
         std::getline(std::cin, title);
 
-        auto book_it = std::find_if(books.begin(), books.end(), [&title](Book* book) {
+        // Search in books
+        auto it_book = std::find_if(books.begin(), books.end(), [&title](Book* book) {
             return *book->get_title() == title;
         });
-        if (book_it != books.end() && *book_it) {
-            favorites.push_back(static_cast<MediaFile*>(std::move(*book_it)));  // Cast to MediaFile* and move
-            *book_it = nullptr;  // Set original pointer to nullptr
+        if (it_book != books.end() && *it_book) {
+            // Manually invoke the move constructor for Book
+            Book* moved_book = new Book(std::move(**it_book));
+            favorites.push_back(moved_book);  // Add the moved Book as MediaFile* to favorites
+
+            delete *it_book;  // Clean up original
+            *it_book = nullptr;  // Set the original pointer to nullptr
             std::cout << "Book \"" << title << "\" moved to favorites." << std::endl;
             return;
         }
 
-        auto movie_it = std::find_if(movies.begin(), movies.end(), [&title](Movie* movie) {
+        // Search in movies
+        auto it_movie = std::find_if(movies.begin(), movies.end(), [&title](Movie* movie) {
             return *movie->get_title() == title;
         });
-        if (movie_it != movies.end() && *movie_it) {
-            favorites.push_back(static_cast<MediaFile*>(std::move(*movie_it)));  // Cast to MediaFile* and move
-            *movie_it = nullptr;  // Set original pointer to nullptr
+        if (it_movie != movies.end() && *it_movie) {
+            // Manually invoke the move constructor for Movie
+            Movie* moved_movie = new Movie(std::move(**it_movie));
+            favorites.push_back(moved_movie);  // Add the moved Movie as MediaFile* to favorites
+
+            delete *it_movie;  // Clean up original
+            *it_movie = nullptr;  // Set the original pointer to nullptr
             std::cout << "Movie \"" << title << "\" moved to favorites." << std::endl;
             return;
         }
 
-        auto song_it = std::find_if(songs.begin(), songs.end(), [&title](Song* song) {
+        // Search in songs
+        auto it_song = std::find_if(songs.begin(), songs.end(), [&title](Song* song) {
             return *song->get_title() == title;
         });
-        if (song_it != songs.end() && *song_it) {
-            favorites.push_back(std::move(*song_it));  // Cast to MediaFile* and move
-            *song_it = nullptr;  // Set original pointer to nullptr
+        if (it_song != songs.end() && *it_song) {
+            // Manually invoke the move constructor for Song
+            Song* moved_song = new Song(std::move(**it_song));
+            favorites.push_back(moved_song);  // Add the moved Song as MediaFile* to favorites
+
+            delete *it_song;  // Clean up original
+            *it_song = nullptr;  // Set the original pointer to nullptr
             std::cout << "Song \"" << title << "\" moved to favorites." << std::endl;
-            // return;
+            return;
         }
+
+        // If not found in any collection
+        std::cout << "Media file with title \"" << title << "\" not found." << std::endl;
     }
 }
 
@@ -382,7 +414,9 @@ void UserInterface::view_favorites() {
     }
 
     for (auto favorite : favorites) {
-        favorite->display_info();
+        if (favorite) {
+            favorite->display_info();
+        }
         std::cout << "-------------------------------" << std::endl;
     }
 }
