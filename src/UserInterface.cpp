@@ -45,19 +45,20 @@ void UserInterface::run() {
                 add_media_type();
                 std::cout << "Choose media type:";
                 std::cin >> media_option;
-                switch (media_option) {
-                    case 1:
-                        add_book_menu();
-                        break;
-                    case 2:
-                        add_movie_menu();
-                        break;
-                    case 3:
-                        add_song_menu();
-                        break;
-                    default:
-                        break;
-                }
+                add_media(media_option);
+                // switch (media_option) {
+                //     case 1:
+                //         add_book_menu();
+                //         break;
+                //     case 2:
+                //         add_movie_menu();
+                //         break;
+                //     case 3:
+                //         add_song_menu();
+                //         break;
+                //     default:
+                //         break;
+                // }
                 break;
             case 2:
                 view_media_type();
@@ -301,6 +302,73 @@ void UserInterface::free_movies() {
 
 }
 
+void UserInterface::add_media(uint8_t option) {
+    std::string title, author, description;
+    uint16_t publication_year;
+
+    std::cout << "Title: ";
+    std::cin >> std::ws;  // Clears any leading whitespace
+    std::getline(std::cin, title);  // Use getline to allow multi-word titles
+
+    std::cout << "Author: ";
+    std::cin >> std::ws;  // Clears any leading whitespace
+    std::getline(std::cin, author); // Use getline to allow multi-word author names
+
+    std::cout << "Publication Year: ";
+    std::cin >> publication_year;
+
+    switch (option) {
+        case 1: {  // Book case
+            uint16_t number_of_pages;
+            std::cout << "Number of Pages: ";
+            std::cin >> number_of_pages;
+
+            std::cout << "Description: ";
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::getline(std::cin, description);
+
+            Book* new_book = new Book(title, author, publication_year, number_of_pages, description);
+            books.push_back(new_book);
+
+            std::cout << "Book Added Successfully!" << std::endl;
+            std::cout << "-------------------------------" << std::endl;
+            break;
+        }
+        case 2: {  // Movie case
+            uint16_t number_of_minutes;
+            std::cout << "Number of Minutes: ";
+            std::cin >> number_of_minutes;
+
+            std::cout << "Description: ";
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::getline(std::cin, description);
+
+            Movie* new_movie = new Movie(title, author, publication_year, number_of_minutes, description);
+            movies.push_back(new_movie);
+
+            std::cout << "Movie Added Successfully!" << std::endl;
+            std::cout << "-------------------------------" << std::endl;
+            break;
+        }
+        case 3: {  // Song case
+            uint32_t number_of_minutes;
+            std::string format;
+            std::cout << "Number of Minutes: ";
+            std::cin >> number_of_minutes;
+
+            std::cout << "Format: ";
+            std::cin >> std::ws;
+            std::getline(std::cin, format);
+
+            Song* new_song = new Song(title, author, publication_year, number_of_minutes, format);
+            songs.push_back(new_song);
+
+            std::cout << "Song Added Successfully!" << std::endl;
+            std::cout << "-------------------------------" << std::endl;
+            break;
+        }
+    }
+}
 void UserInterface::free_songs() {
     // Free allocated memory for songs
     if (!songs.empty()) {

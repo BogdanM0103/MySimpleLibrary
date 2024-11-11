@@ -40,6 +40,8 @@ public:
     // Frees movies vector from heap
     void free_movies();
 
+    void add_media(uint8_t option);
+
     // Add song
     void add_song_menu();
     // Free songs
