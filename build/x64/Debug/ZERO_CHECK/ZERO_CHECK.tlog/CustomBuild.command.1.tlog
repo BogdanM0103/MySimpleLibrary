@@ -1,0 +1,10 @@
+^C:\USERS\BOGDAN\CLIONPROJECTS\MYSIMPLELIBRARY\BUILD\CMAKEFILES\0603309BAC68282C8598181B0B06DFCF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Bogdan/CLionProjects/MySimpleLibrary -BC:/Users/Bogdan/CLionProjects/MySimpleLibrary/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Bogdan/CLionProjects/MySimpleLibrary/build/MySimpleLibrary.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

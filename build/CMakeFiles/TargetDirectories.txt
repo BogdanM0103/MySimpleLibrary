@@ -1,0 +1,3 @@
+C:/Users/Bogdan/CLionProjects/MySimpleLibrary/build/CMakeFiles/MySimpleLibrary.dir
+C:/Users/Bogdan/CLionProjects/MySimpleLibrary/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Bogdan/CLionProjects/MySimpleLibrary/build/CMakeFiles/ZERO_CHECK.dir
